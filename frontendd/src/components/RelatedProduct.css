@@ -1,0 +1,35 @@
+/* RelatedProduct.css */
+.relatedproduct {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.relatedproduct h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.relatedproduct hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.relatedproductItem {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .relatedproductItem {
+        grid-template-columns: 1fr;
+    }
+}

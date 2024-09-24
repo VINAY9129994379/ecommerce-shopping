@@ -1,0 +1,109 @@
+/* Main container for the login/signup form */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .logincontainer {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .logincontainer h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  /* Input fields for the login/signup form */
+  .loginfield {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .loginfield input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .loginfield input:focus {
+    border-color: #333;
+  }
+  
+  /* Continue button */
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Login/Signup text links */
+  .loginsignup {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .loginsignup span {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .loginsignup span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Checkbox agreement section */
+  .loginsignupagree {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .loginsignupagree input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .loginsignupagree p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .loginsignupagree p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .loginsignupagree p a:hover {
+    text-decoration: underline;
+  }
+  

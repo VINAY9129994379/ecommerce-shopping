@@ -1,0 +1,153 @@
+/* Container styling for the entire item */
+.item {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+  }
+  
+  /* Styling for the inner container */
+  .Itemcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    cursor: pointer;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .Itemcontainer:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styling */
+  .Itemcontainer img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .Itemcontainer:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Name styling */
+  .Itemcontainer p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Price section styling */
+  .itemPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .itemPrice p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  /* Old price styling */
+  .itempriceold p {
+    font-size: 1.2rem;
+    color: #d9534f;
+    text-decoration: line-through;
+    margin-left: 10px;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (max-width: 768px) {
+    /* Container styling for the entire item */
+    .item {
+      flex-direction: column;
+      margin: 1rem;
+    }
+  
+    /* Styling for the inner container */
+    .Itemcontainer {
+      width: 220px;
+      padding: 1rem;
+    }
+  
+    /* Image styling */
+    .Itemcontainer img {
+      width: 180px;
+      height: 180px;
+    }
+  
+    /* Name styling */
+    .Itemcontainer p {
+      font-size: 1.1rem;
+    }
+  
+    /* Price section styling */
+    .itemPrice p {
+      font-size: 1.3rem;
+    }
+  
+    /* Old price styling */
+    .itempriceold p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Container styling for the entire item */
+    .item {
+      margin: 0.5rem;
+    }
+  
+    /* Styling for the inner container */
+    .Itemcontainer {
+      width: 180px;
+      padding: 0.75rem;
+    }
+  
+    /* Image styling */
+    .Itemcontainer img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    /* Name styling */
+    .Itemcontainer p {
+      font-size: 1rem;
+    }
+  
+    /* Price section styling */
+    .itemPrice p {
+      font-size: 1.2rem;
+    }
+  
+    /* Old price styling */
+    .itempriceold p {
+      font-size: 0.9rem;
+    }
+  }
+  

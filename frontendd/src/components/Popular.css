@@ -1,0 +1,33 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centers the h1 */
+    justify-content: center; /* Vertically centers the content */
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  /* Centering and styling the h1 */
+  .popular h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling the horizontal line */
+  .popular hr {
+    width: 50%; /* Adjust width of the line */
+    border: 0;
+    height: 2px;
+    background-color: #333; /* Set the color of the line */
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid layout for items */
+  .popularItem {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+    width: 100%;
+  }
+  

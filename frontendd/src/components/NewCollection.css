@@ -1,0 +1,67 @@
+.newcollection {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background color */
+    margin: 2rem 0;
+  }
+  
+  /* Center and style the heading */
+  .newcollection h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling for the horizontal line */
+  .newcollection hr {
+    width: 60%; /* Adjust the width of the hr element */
+    border: none;
+    height: 2px;
+    background-color: #333; /* Set color of the line */
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid layout for items */
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  /* Ensure items have proper styling (optional) */
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .item img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .item p {
+    margin: 0.5rem 0;
+  }
+  
+  .itemPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .itempriceNew {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .itempriceold {
+    font-size: 1rem;
+    color: #888;
+    text-decoration: line-through;
+  }
+  
